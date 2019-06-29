@@ -1,4 +1,91 @@
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Smartphones. If screen size is more than 375px, apply these rules. */
+@media screen and (min-width: 375px){
+  h1 {
+    font-size: 26px;
+  }
+
+  .top {
+    padding: 50px;
+    text-align: center;
+  }
+
+  .images {
+    width: 100%;
+    height: auto;
+  }
+
+  .preview {
+    position: relative;
+    padding-bottom: 50px;
+  }
+
+  .preview h1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+  }
+
+}
+
+/* Tablets. If screen size is more than 575px, apply these rules. */
+@media screen and (min-width: 575px){
+  h1 {
+    font-size: 20px;
+  }
+
+  .images {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+  }
+
+  .top {
+    padding-bottom: 20px;
+  }
+
+  .content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 0 50px 10px 50px
+  }
+
+  .preview {
+    position: static;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .preview h1 {
+    position: relative;
+    top: 50px;
+    left: 25px;
+  }
+
+}
+
+/* Laptops */
+@media screen and (min-width: 991px){
+  .images {
+    width: 100%;
+    min-width: 200px;
+    height: 200px;
+  }
+
+  .content {
+    flex-flow: row;
+  }
+
+}
+
+/* Desktops */
+@media screen and (min-width: 1199px){
+
 }
